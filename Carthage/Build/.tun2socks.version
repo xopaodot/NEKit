@@ -1,0 +1,31 @@
+{
+  "commitish" : "0.7.0",
+  "iOS" : [
+    {
+      "hash" : "3bb05929718e24fe230e4280033ac49a5a34840b85e50ffc48710135f10454da",
+      "name" : "lwip",
+      "container" : "lwip.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "hash" : "8ff4cd943532e4cd1a7bdeae81d603737fc7582263ac1b4fe9e892630105c00c",
+      "name" : "lwip",
+      "container" : "lwip.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "76214f8d9489a092bb5bc30b9a02e501e5c6308e1963b6b9eb9c558c3347b036",
+      "name" : "tun2socks",
+      "container" : "tun2socks.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "8d9111af11a666c2aa499fd3363241b628bac049afc5b5a4cf5aa0ca5ee3a0f7",
+      "name" : "tun2socks",
+      "container" : "tun2socks.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    }
+  ]
+}

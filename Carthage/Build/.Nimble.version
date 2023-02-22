@@ -1,0 +1,19 @@
+{
+  "commitish" : "v10.0.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "39e112894fe7dd7e7882aa42ffad7c53b1986d6aaf848aa4e4ceef45b76213e1",
+      "name" : "Nimble",
+      "container" : "Nimble.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "3229effc59572e4262d27a689bb895f63ca256ac2268f01379dbff64fdffaab6",
+      "name" : "Nimble",
+      "container" : "Nimble.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    }
+  ]
+}

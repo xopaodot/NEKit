@@ -1,0 +1,19 @@
+{
+  "commitish" : "0.5.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "55cfa06cfb238e90288cfb088b373b64262819e8cb1fc05b632622ad2e4548fe",
+      "name" : "MMDB",
+      "container" : "MMDB.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)",
+      "hash" : "02cb0ff7d838492f693a54a632b3ab8a97af050b80b5de27511eba98f0800aea",
+      "name" : "MMDB",
+      "container" : "MMDB.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}
