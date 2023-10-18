@@ -1,6 +1,9 @@
 import XCTest
 import Nimble
 import Foundation
+#if SWIFT_PACKAGE
+import NimbleSharedTestHelpers
+#endif
 
 final class SatisfyAllOfTest: XCTestCase {
     func testSatisfyAllOf() {
@@ -47,5 +50,17 @@ final class SatisfyAllOfTest: XCTestCase {
         expect(false).to(beFalsy() && beFalse())
         expect(false).toNot(beTrue() && beFalse())
         expect(true).toNot(beTruthy() && beFalsy())
+    }
+
+    func testSatisfyAllOfCachesExpressionBeforePassingToPredicates() {
+        // This is not a great example of assertion writing - functions being asserted on in Expressions should not have side effects.
+        // But we should still handle those cases anyway.
+        var value: Int = 0
+        func testFunction() -> Int {
+            value += 1
+            return value
+        }
+
+        expect(testFunction()).toEventually(satisfyAllOf(equal(1), equal(1)))
     }
 }

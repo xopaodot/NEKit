@@ -9,13 +9,12 @@ import Quick
             AfterSuiteTests.self,
             Configuration_AfterEachSpec.self,
             Configuration_BeforeEachSpec.self,
-            CurrentSpecTests.self,
+            QuickSpecCurrentTests.self,
             FunctionalTests_AfterEachSpec.self,
             FunctionalTests_BeforeEachSpec.self,
             FunctionalTests_BeforeSuite_BeforeSuiteSpec.self,
             FunctionalTests_BeforeSuite_Spec.self,
             FunctionalTests_ItSpec.self,
-            FunctionalTests_AsyncItSpec.self,
             FunctionalTests_PendingSpec.self,
             FunctionalTests_CrossReferencingSpecA.self,
             FunctionalTests_CrossReferencingSpecB.self,
@@ -46,6 +45,7 @@ import Quick
             testCase(PendingTests.allTests),
             testCase(SharedExamples_BeforeEachTests.allTests),
             testCase(SharedExamplesTests.allTests),
+            testCase(XCTestCurrentSpecTests.allTests),
         ])
     }
 }

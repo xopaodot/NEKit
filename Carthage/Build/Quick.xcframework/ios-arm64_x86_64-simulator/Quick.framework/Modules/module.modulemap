@@ -6,6 +6,6 @@ framework module Quick {
 }
 
 module Quick.Swift {
-    header "Quick-Swift.h"
-    requires objc
+  header "Quick-Swift.h"
+  requires objc
 }

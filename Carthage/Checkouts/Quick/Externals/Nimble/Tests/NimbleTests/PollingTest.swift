@@ -5,6 +5,9 @@ import CoreFoundation
 import Foundation
 import XCTest
 import Nimble
+#if SWIFT_PACKAGE
+import NimbleSharedTestHelpers
+#endif
 
 // swiftlint:disable:next type_body_length
 final class PollingTest: XCTestCase {
@@ -45,9 +48,9 @@ final class PollingTest: XCTestCase {
     }
 
     func testToEventuallyWithCustomDefaultTimeout() {
-        AsyncDefaults.timeout = .seconds(2)
+        PollingDefaults.timeout = .seconds(2)
         defer {
-            AsyncDefaults.timeout = .seconds(1)
+            PollingDefaults.timeout = .seconds(1)
         }
 
         var value = 0
@@ -69,9 +72,9 @@ final class PollingTest: XCTestCase {
     }
 
     func testWaitUntilWithCustomDefaultsTimeout() {
-        AsyncDefaults.timeout = .seconds(3)
+        PollingDefaults.timeout = .seconds(3)
         defer {
-            AsyncDefaults.timeout = .seconds(1)
+            PollingDefaults.timeout = .seconds(1)
         }
         waitUntil { done in
             Thread.sleep(forTimeInterval: 2.8)

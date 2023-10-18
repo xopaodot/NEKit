@@ -4,8 +4,8 @@ import CoreFoundation
 import Dispatch
 import Foundation
 
-private let timeoutLeeway = DispatchTimeInterval.milliseconds(1)
-private let pollLeeway = DispatchTimeInterval.milliseconds(1)
+private let timeoutLeeway = NimbleTimeInterval.milliseconds(1)
+private let pollLeeway = NimbleTimeInterval.milliseconds(1)
 
 internal struct AsyncAwaitTrigger {
     let timeoutSource: DispatchSourceTimer
@@ -34,7 +34,7 @@ internal class AsyncAwaitPromiseBuilder<T> {
             self.trigger = trigger
     }
 
-    func timeout(_ timeoutInterval: DispatchTimeInterval, forcefullyAbortTimeout: DispatchTimeInterval) -> Self {
+    func timeout(_ timeoutInterval: NimbleTimeInterval, forcefullyAbortTimeout: NimbleTimeInterval) -> Self {
         /// = Discussion =
         ///
         /// There's a lot of technical decisions here that is useful to elaborate on. This is
@@ -64,9 +64,9 @@ internal class AsyncAwaitPromiseBuilder<T> {
         ///
         /// In addition, stopping the run loop is used to halt code executed on the main run loop.
         trigger.timeoutSource.schedule(
-            deadline: DispatchTime.now() + timeoutInterval,
+            deadline: DispatchTime.now() + timeoutInterval.dispatchTimeInterval,
             repeating: .never,
-            leeway: timeoutLeeway
+            leeway: timeoutLeeway.dispatchTimeInterval
         )
         trigger.timeoutSource.setEventHandler {
             guard self.promise.asyncResult.isIncomplete() else { return }
@@ -81,7 +81,7 @@ internal class AsyncAwaitPromiseBuilder<T> {
                 }
             }
             // potentially interrupt blocking code on run loop to let timeout code run
-            let now = DispatchTime.now() + forcefullyAbortTimeout
+            let now = DispatchTime.now() + forcefullyAbortTimeout.dispatchTimeInterval
             let didNotTimeOut = timedOutSem.wait(timeout: now) != .success
             let timeoutWasNotTriggered = semTimedOutOrBlocked.wait(timeout: .now()) == .success
             if didNotTimeOut && timeoutWasNotTriggered {
@@ -164,20 +164,26 @@ extension Awaiter {
                 trigger: trigger)
     }
 
-    func poll<T>(_ pollInterval: DispatchTimeInterval, closure: @escaping () throws -> T?) async -> AsyncAwaitPromiseBuilder<T> {
+    func poll<T>(_ pollInterval: NimbleTimeInterval, closure: @escaping () async throws -> T?) async -> AsyncAwaitPromiseBuilder<T> {
         let promise = AwaitPromise<T>()
         let timeoutSource = createTimerSource(timeoutQueue)
         let asyncSource = createTimerSource(asyncQueue)
         let trigger = AsyncAwaitTrigger(timeoutSource: timeoutSource, actionSource: asyncSource) {
             let interval = pollInterval
-            asyncSource.schedule(deadline: .now(), repeating: interval, leeway: pollLeeway)
+            asyncSource.schedule(
+                deadline: .now(),
+                repeating: interval.dispatchTimeInterval,
+                leeway: pollLeeway.dispatchTimeInterval
+            )
             asyncSource.setEventHandler {
-                do {
-                    if let result = try closure() {
-                        promise.resolveResult(.completed(result))
+                Task<Void, Never> {
+                    do {
+                        if let result = try await closure() {
+                            promise.resolveResult(.completed(result))
+                        }
+                    } catch let error {
+                        promise.resolveResult(.errorThrown(error))
                     }
-                } catch let error {
-                    promise.resolveResult(.errorThrown(error))
                 }
             }
             asyncSource.resume()
@@ -192,15 +198,15 @@ extension Awaiter {
 }
 
 internal func pollBlock(
-    pollInterval: DispatchTimeInterval,
-    timeoutInterval: DispatchTimeInterval,
+    pollInterval: NimbleTimeInterval,
+    timeoutInterval: NimbleTimeInterval,
     file: FileString,
     line: UInt,
     fnName: String = #function,
-    expression: @escaping () throws -> Bool) async -> PollResult<Bool> {
+    expression: @escaping () async throws -> Bool) async -> PollResult<Bool> {
         let awaiter = NimbleEnvironment.activeInstance.awaiter
         let result = await awaiter.poll(pollInterval) { () throws -> Bool? in
-            if try expression() {
+            if try await expression() {
                 return true
             }
             return nil

@@ -13,8 +13,23 @@ private enum AfterEachType {
 
 private var afterEachOrder = [AfterEachType]()
 
+private enum ThrowingAfterEachType: String, CustomStringConvertible {
+    case outerOne
+    case innerOne
+    case innerTwo
+    case innerThree
+
+    var description: String { rawValue }
+}
+
+private var throwingAfterEachOrder = [ThrowingAfterEachType]()
+
+private struct AfterEachError: Error {}
+
+private var isRunningFunctionalTests = false
+
 class FunctionalTests_AfterEachSpec: QuickSpec {
-    override func spec() {
+    override class func spec() {
         describe("afterEach ordering") {
             afterEach { afterEachOrder.append(.outerOne) }
             afterEach { afterEachOrder.append(.outerTwo) }
@@ -51,12 +66,27 @@ class FunctionalTests_AfterEachSpec: QuickSpec {
             }
         }
 
-        describe("execution time") {
-            afterEach { @MainActor in
-                expect(Thread.isMainThread).to(beTrue())
-            }
+        describe("throwing errors") {
+            afterEach { throwingAfterEachOrder.append(.outerOne) }
 
-            it("executes beforeEach's on the main thread") {}
+            context("when nested") {
+                beforeEach {
+                    throwingAfterEachOrder.append(.innerOne)
+                }
+
+                afterEach {
+                    throwingAfterEachOrder.append(.innerTwo)
+                    if isRunningFunctionalTests {
+                        throw AfterEachError()
+                    }
+                }
+
+                afterEach {
+                    throwingAfterEachOrder.append(.innerThree)
+                }
+
+                it("runs this test") {}
+            }
         }
 
 #if canImport(Darwin) && !SWIFT_PACKAGE
@@ -78,12 +108,23 @@ final class AfterEachTests: XCTestCase, XCTestCaseProvider {
     static var allTests: [(String, (AfterEachTests) -> () throws -> Void)] {
         return [
             ("testAfterEachIsExecutedInTheCorrectOrder", testAfterEachIsExecutedInTheCorrectOrder),
+            ("testAfterEachWhenThrowingStopsRunningAdditionalAfterEachs", testAfterEachWhenThrowingStopsRunningAdditionalAfterEachs),
         ]
     }
 
-    func testAfterEachIsExecutedInTheCorrectOrder() {
+    override func setUp() {
         afterEachOrder = []
+        throwingAfterEachOrder = []
+        isRunningFunctionalTests = true
+    }
 
+    override func tearDown() {
+        afterEachOrder = []
+        throwingAfterEachOrder = []
+        isRunningFunctionalTests = false
+    }
+
+    func testAfterEachIsExecutedInTheCorrectOrder() {
         qck_runSpec(FunctionalTests_AfterEachSpec.self)
         let expectedOrder: [AfterEachType] = [
             // [1] The outer afterEach closures are executed from top to bottom.
@@ -95,7 +136,21 @@ final class AfterEachTests: XCTestCase, XCTestCaseProvider {
             .innerOne, .innerTwo, .outerOne, .outerTwo, .outerThree,
         ]
         XCTAssertEqual(afterEachOrder, expectedOrder)
+    }
 
-        afterEachOrder = []
+    func testAfterEachWhenThrowingStopsRunningAdditionalAfterEachs() {
+        qck_runSpec(FunctionalTests_AfterEachSpec.self)
+
+        let expectedOrder: [ThrowingAfterEachType] = [
+            .innerOne,
+            .innerTwo,
+            .innerThree,
+            .outerOne
+        ]
+
+        XCTAssertEqual(
+            throwingAfterEachOrder,
+            expectedOrder
+        )
     }
 }

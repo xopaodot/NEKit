@@ -2,6 +2,9 @@
 
 import XCTest
 import Nimble
+#if SWIFT_PACKAGE
+import NimbleSharedTestHelpers
+#endif
 
 final class AsyncAwaitTest: XCTestCase {
     func testToPositiveMatches() async {
@@ -43,6 +46,21 @@ final class AsyncAwaitTest: XCTestCase {
         await failsWithErrorMessage("unexpected error thrown: <\(errorToThrow)>") {
             await expect { try self.doThrowError() }.toEventuallyNot(equal(0))
         }
+    }
+
+    func testToEventuallyWithAsyncExpressions() async {
+        actor ExampleActor {
+            private var count = 0
+
+            func value() -> Int {
+                count += 1
+                return count
+            }
+        }
+
+        let subject = ExampleActor()
+
+        await expect { await subject.value() }.toEventually(equal(2))
     }
 
     func testToEventuallySyncCase() async {
@@ -91,10 +109,40 @@ final class AsyncAwaitTest: XCTestCase {
         await expect(MySubject()).toEventually(equal(MySubject()))
     }
 
+    func testToEventuallyWithSyncExpectationAlwaysExecutesExpressionOnMainActor() async {
+        await expect(Thread.isMainThread).toEventually(beTrue())
+        await expect(Thread.isMainThread).toEventuallyNot(beFalse())
+        await expect(Thread.isMainThread).toAlways(beTrue(), until: .seconds(1))
+        await expect(Thread.isMainThread).toNever(beFalse(), until: .seconds(1))
+    }
+
+    func testToEventuallyWithAsyncExpectationDoesNotNecessarilyExecutesExpressionOnMainActor() async {
+        // This prevents a "Class property 'isMainThread' is unavailable from asynchronous contexts; Work intended for the main actor should be marked with @MainActor; this is an error in Swift 6" warning.
+        // However, the functionality actually works as you'd expect it to, you're just expected to tag things to use the main actor.
+        func isMainThread() -> Bool { Thread.isMainThread }
+
+        await expecta(isMainThread()).toEventually(beFalse())
+        await expecta(isMainThread()).toEventuallyNot(beTrue())
+        await expecta(isMainThread()).toAlways(beFalse(), until: .seconds(1))
+        await expecta(isMainThread()).toNever(beTrue(), until: .seconds(1))
+    }
+
+    @MainActor
+    func testToEventuallyWithAsyncExpectationDoesExecuteExpressionOnMainActorWhenTestRunsOnMainActor() async {
+        // This prevents a "Class property 'isMainThread' is unavailable from asynchronous contexts; Work intended for the main actor should be marked with @MainActor; this is an error in Swift 6" warning.
+        // However, the functionality actually works as you'd expect it to, you're just expected to tag things to use the main actor.
+        func isMainThread() -> Bool { Thread.isMainThread }
+
+        await expecta(isMainThread()).toEventually(beTrue())
+        await expecta(isMainThread()).toEventuallyNot(beFalse())
+        await expecta(isMainThread()).toAlways(beTrue(), until: .seconds(1))
+        await expecta(isMainThread()).toNever(beFalse(), until: .seconds(1))
+    }
+
     func testToEventuallyWithCustomDefaultTimeout() async {
-        AsyncDefaults.timeout = .seconds(2)
+        PollingDefaults.timeout = .seconds(2)
         defer {
-            AsyncDefaults.timeout = .seconds(1)
+            PollingDefaults.timeout = .seconds(1)
         }
 
         var value = 0
@@ -120,9 +168,9 @@ final class AsyncAwaitTest: XCTestCase {
     }
 
     func testWaitUntilWithCustomDefaultsTimeout() async {
-        AsyncDefaults.timeout = .seconds(3)
+        PollingDefaults.timeout = .seconds(3)
         defer {
-            AsyncDefaults.timeout = .seconds(1)
+            PollingDefaults.timeout = .seconds(1)
         }
         await waitUntil { done in
             Thread.sleep(forTimeInterval: 2.8)

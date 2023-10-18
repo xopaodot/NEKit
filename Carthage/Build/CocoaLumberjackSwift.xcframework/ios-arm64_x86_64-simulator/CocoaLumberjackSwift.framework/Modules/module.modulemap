@@ -6,6 +6,6 @@ framework module CocoaLumberjackSwift {
 }
 
 module CocoaLumberjackSwift.Swift {
-    header "CocoaLumberjackSwift-Swift.h"
-    requires objc
+  header "CocoaLumberjackSwift-Swift.h"
+  requires objc
 }

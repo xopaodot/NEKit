@@ -1,6 +1,6 @@
 // Software License Agreement (BSD License)
 //
-// Copyright (c) 2010-2022, Deusty, LLC
+// Copyright (c) 2010-2023, Deusty, LLC
 // All rights reserved.
 //
 // Redistribution and use of this software in source and binary forms,
@@ -16,8 +16,9 @@
 #import <XCTest/XCTest.h>
 #import <CocoaLumberjack/DDContextFilterLogFormatter+Deprecated.h>
 
-static DDLogMessage *testLogMessage() {
-    return [[DDLogMessage alloc] initWithMessage:@"test log message"
+static DDLogMessage *testLogMessage(void) {
+    return [[DDLogMessage alloc] initWithFormat:@"test log message"
+                                      formatted:@"test log message"
                                            level:DDLogLevelDebug
                                             flag:DDLogFlagError
                                          context:1

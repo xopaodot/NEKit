@@ -6,47 +6,55 @@
 	<dict>
 		<key>Headers/CocoaLumberjackSwift-Swift.h</key>
 		<data>
-		tRRhwL/p9PlBjYLe/fBQFbHB9gI=
+		k+izjfPWVQHpN+0/Osq1BPPDaE4=
 		</data>
 		<key>Headers/CocoaLumberjackSwift.h</key>
 		<data>
-		aZEN8D1udhmWGzROH7z0I7p/9yU=
+		7ZgL1FBRI9DI3w1bBZe0YX5xLak=
 		</data>
 		<key>Headers/SwiftLogLevel.h</key>
 		<data>
-		3Prct023QwpdyrEnQjBwgUHvzjM=
+		+jFhAgoO4wP4iAnwJ+gNTsUT2ng=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cONiTAbscMmrtT34Aa56gl0GnbY=
+		HG9AZAEVOAwrAFjt+Fral8UVz1I=
 		</data>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		YKisaVj5k36zomAp7E7Ro+PhOkI=
+		4HLr/sjuSIuRQeDbqORw35be/VU=
 		</data>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		PAmR9BZ82/tfF5obx1tvq2iuolQ=
+		60jyviSkjpXZWGPUJA1+tpWbH0Q=
+		</data>
+		<key>Modules/CocoaLumberjackSwift.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7dM2Ule8ozrhYBlAPqFf3UEcbW4=
+		axSfDIsQLD+Wu3YCx1WTKLr7rwg=
 		</data>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sNscDCmKLPU1N86GNbqP7qLnvEY=
+		0V14eJPTAJ5qVdU3mHkufV2GkfU=
+		</data>
+		<key>Modules/CocoaLumberjackSwift.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CsdxMOqSPbKBO/TAA5fdhRW8xAY=
+		aJWrZOnkviVLwtixPG5CsrIMZhU=
 		</data>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DdDYZHe6WX9ceQKV18Zek+dMKHk=
+		4yfqVcQ7Z7sPAO2r+/Yjn5mesNA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		QJtbw5Yjv3bIMsyKS6gQY7Ut7LQ=
+		mTA9m7jk92cnqZh8w9v9Bp8SJzM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +63,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BnCqSu49tJwVZf74cEZNXU1QzVL+tOTojBO/uerz5Gc=
+			J3rQvou2XJIj/iJuI+qK80oLPziRRe8D1X3K5iuc2BA=
 			</data>
 		</dict>
 		<key>Headers/CocoaLumberjackSwift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+0+oYnZm4J/pANFhhlY89WhDBqXI2YelMXZwtFRd5KA=
+			gJldkvK/8LVNtCRSur1wWkQi2i1WXAkqtZPZib1JhfA=
 			</data>
 		</dict>
 		<key>Headers/SwiftLogLevel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzPXscMSmMEg6WE4/br680AvxsQNopnLNFd1O65Z3q8=
+			BCIH0DfE5p+WAGKIt6FJ3Zy+EeA+YJdbYbAATkugXsw=
 			</data>
 		</dict>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nh+fIm0y7W951gjhLf4xraVdvx2RFlF4p+cczh3e6yU=
+			OkWI36f5i+DMFid78lG4RimzuRsjHFIF2hfswIrxJho=
 			</data>
 		</dict>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+knGgnG1i79Ro12GHPiM+YUJ0XXKAHsogu/XvrWeu+E=
+			LUyln3MMSNmsX4l8MlCUdfLRdFfV81/lnfWdpFlwF/U=
+			</data>
+		</dict>
+		<key>Modules/CocoaLumberjackSwift.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iFKxOTwuTHvVsF2x82TtURgUBbii8coBucMSSbXYjc0=
+			sMbQqI+Ki6O1rFOK9Prt76FyF9djU5oIalj1rLcdVU8=
 			</data>
 		</dict>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n/T5KBYouTvRZggplA5t0Wf1NaN7xk59Em8Pz6dVI2s=
+			5WjLeVxw8E7waTpMmBBLZiMvpqmlHFqOdkaomiSVIwQ=
+			</data>
+		</dict>
+		<key>Modules/CocoaLumberjackSwift.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+l+++Ho62ZDJKiyk2ctmd3XqGpjioy2SCKwResszfc=
+			n4txaf2sWZ3w4GF8vp2/DnKYSsBmwo/b0FdrQys/9EI=
 			</data>
 		</dict>
 		<key>Modules/CocoaLumberjackSwift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mWT+n3Pkcg+5/jPV6+9b4HGcnN8FwSyHbLeFDfA3dh0=
+			ek4tCLXsEVvuBxeFpuxVzVpyv4h3Z2pJe1ErogyOIjE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mFQCyPlraxBQ6DL6tPKivQNlSZR6C9PdFU3sB72H9cE=
+			9G286d/hy21XlWypUhzPfux2AY/Lk/4DHGJlHdZGMv4=
 			</data>
 		</dict>
 	</dict>

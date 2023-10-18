@@ -3,7 +3,7 @@ import Quick
 import Nimble
 
 class Configuration_AfterEachSpec: QuickSpec {
-    override func spec() {
+    override class func spec() {
         beforeEach {
             FunctionalTests_Configuration_AfterEachWasExecuted = false
         }
@@ -23,7 +23,7 @@ final class Configuration_AfterEachTests: XCTestCase, XCTestCaseProvider {
     func testExampleIsRunAfterTheConfigurationBeforeEachIsExecuted() {
         FunctionalTests_Configuration_AfterEachWasExecuted = false
 
-        qck_runSpec(Configuration_BeforeEachSpec.self)
+        qck_runSpec(Configuration_AfterEachSpec.self)
         XCTAssert(FunctionalTests_Configuration_AfterEachWasExecuted)
 
         FunctionalTests_Configuration_AfterEachWasExecuted = false

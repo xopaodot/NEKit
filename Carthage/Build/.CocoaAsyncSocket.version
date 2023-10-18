@@ -2,16 +2,16 @@
   "commitish" : "7.6.5",
   "iOS" : [
     {
-      "hash" : "6b1e943a3b3ec0965fb9f693561de8bf9db8cc62190695acfaea8e512efcfcf8",
+      "hash" : "c87a3a8c8485760578a865c967b7d453478de53d70c540729cd04901f507c053",
       "name" : "CocoaAsyncSocket",
       "container" : "CocoaAsyncSocket.xcframework",
-      "identifier" : "ios-arm64_i386_x86_64-simulator"
+      "identifier" : "ios-arm64"
     },
     {
-      "hash" : "1871e54e4b707596bd0393a79e11a40374cb557aec4fe533feb947b2730e8920",
+      "hash" : "78b44c10ff56a418545bc3d1d3013666c3d51c8561222dbea2e355ada8b3284c",
       "name" : "CocoaAsyncSocket",
       "container" : "CocoaAsyncSocket.xcframework",
-      "identifier" : "ios-arm64_armv7"
+      "identifier" : "ios-arm64_x86_64-simulator"
     }
   ]
 }
