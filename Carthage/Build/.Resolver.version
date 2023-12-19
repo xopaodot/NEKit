@@ -3,14 +3,14 @@
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)",
-      "hash" : "9d76f5e1770d4d06711774a6f43954faf1e63bd351312b92807926724b20d283",
+      "hash" : "eb0ced2e13e52565e56438a69c1f1cd98bbbacd387b3fad124a38c39f343a1ef",
       "name" : "Resolver",
       "container" : "Resolver.xcframework",
       "identifier" : "ios-arm64"
     },
     {
       "swiftToolchainVersion" : "5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)",
-      "hash" : "97a3fb1b5f4f12de7c385da850c290018a9a2dcd526f66371688d9bce0fb09ff",
+      "hash" : "7b8507d6ec73902c95b5730df00bae9659d4fa97f9270332dc0a8ae2e60d9101",
       "name" : "Resolver",
       "container" : "Resolver.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"
