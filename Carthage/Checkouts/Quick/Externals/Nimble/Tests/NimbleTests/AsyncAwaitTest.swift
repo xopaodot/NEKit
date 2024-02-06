@@ -6,7 +6,7 @@ import Nimble
 import NimbleSharedTestHelpers
 #endif
 
-final class AsyncAwaitTest: XCTestCase {
+final class AsyncAwaitTest: XCTestCase { // swiftlint:disable:this type_body_length
     func testToPositiveMatches() async {
         func someAsyncFunction() async throws -> Int {
             try await Task.sleep(nanoseconds: 1_000_000) // 1 millisecond
@@ -85,7 +85,7 @@ final class AsyncAwaitTest: XCTestCase {
     @MainActor
     func testToEventuallyOnMain() async {
         await expect(1).toEventually(equal(1), timeout: .seconds(300))
-        await expect { usleep(10); return 1 }.toEventually(equal(1))
+        await expect { try? await Task.sleep(nanoseconds: 10_000); return 1 }.toEventually(equal(1))
     }
 
     @MainActor

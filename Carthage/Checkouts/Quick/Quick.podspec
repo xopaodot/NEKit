@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Quick"
-  s.version      = "7.3.0"
+  s.version      = "7.4.0"
   s.summary      = "The Swift (and Objective-C) testing framework."
 
   s.description  = <<-DESC
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "13.0"
   s.osx.deployment_target = "10.15"
   s.tvos.deployment_target = '13.0'
+  s.visionos.deployment_target = '1.0'
 
   s.source       = { :git => "https://github.com/Quick/Quick.git", :tag => "v#{s.version}" }
   s.source_files = "Sources/**/*.{swift,h,m}"

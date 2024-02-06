@@ -3,14 +3,14 @@
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)",
-      "hash" : "4ea65028085297cbe727f0cd180f758d308e0955fd66c1ac84f7c035209bb4fa",
+      "hash" : "3e69e14ab2195b5c9ce04ed8fa352484221c75782848e2b136b5f999e5fdd1dd",
       "name" : "Nimble",
       "container" : "Nimble.xcframework",
       "identifier" : "ios-arm64"
     },
     {
       "swiftToolchainVersion" : "5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)",
-      "hash" : "6dbf44e170762b1e95a45474abb60433f172f7e548cdbc46032cf556a6c3fb34",
+      "hash" : "d1be644cc957dc20d715ec8011916015893bd2c10a2ba29dd98b32faaa4b58bf",
       "name" : "Nimble",
       "container" : "Nimble.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"

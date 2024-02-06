@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/tun2socks.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Xci8mPpg6kxwi5UMuKTvCmDmggY=
+		CleAbKhjUE7bNixBodJ7gICJSsc=
 		</data>
 		<key>Modules/tun2socks.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		aoYOtB+RbzfVxudrr81q3V0vdf0=
+		cd+dc1lss31h1GZgiTkSQ42g6GM=
 		</data>
 		<key>Modules/tun2socks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -92,22 +92,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xci8mPpg6kxwi5UMuKTvCmDmggY=
+			CleAbKhjUE7bNixBodJ7gICJSsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			JOH32BHB/mqwB/qf+BUWMa91HwRqwPi10/XDZlbj9sQ=
+			oYlqprjY/gBnB33pjVv+onP0+9+Z/b9M1t5Bdh7zeJM=
 			</data>
 		</dict>
 		<key>Modules/tun2socks.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aoYOtB+RbzfVxudrr81q3V0vdf0=
+			cd+dc1lss31h1GZgiTkSQ42g6GM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OXYDSRkGlvGw0UTAyk8F0DYu+guQsA7ecBSTH7kLDyM=
+			MGY8tZ+JwLSVnXbXhDq3lBsM+OQeAhBDhdUfy06AqLs=
 			</data>
 		</dict>
 		<key>Modules/tun2socks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

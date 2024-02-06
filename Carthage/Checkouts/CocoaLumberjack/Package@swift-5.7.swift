@@ -24,14 +24,17 @@ let package = Package(
             targets: ["CocoaLumberjackSwiftLogBackend"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.5.0"),
+        .package(url: "https://github.com/apple/swift-log", from: "1.5.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "CocoaLumberjack",
-            exclude: ["Supporting Files"]),
+            exclude: ["Supporting Files"],
+            resources: [
+                .process("PrivacyInfo.xcprivacy"),
+            ]),
         .target(
             name: "CocoaLumberjackSwiftSupport",
             dependencies: ["CocoaLumberjack"]),
@@ -39,14 +42,14 @@ let package = Package(
             name: "CocoaLumberjackSwift",
             dependencies: [
                 "CocoaLumberjack",
-                "CocoaLumberjackSwiftSupport"
+                "CocoaLumberjackSwiftSupport",
             ],
             exclude: ["Supporting Files"]),
         .target(
             name: "CocoaLumberjackSwiftLogBackend",
             dependencies: [
                 "CocoaLumberjack",
-                .product(name: "Logging", package: "swift-log")
+                .product(name: "Logging", package: "swift-log"),
             ]),
         .testTarget(
             name: "CocoaLumberjackTests",

@@ -12,20 +12,6 @@
         "moduleName": "Quick"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
         "kind": "TypeDecl",
         "name": "StopTest",
         "printedName": "StopTest",
@@ -280,40 +266,10 @@
       },
       {
         "kind": "Import",
-        "name": "XCTest",
-        "printedName": "XCTest",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Quick"
-      },
-      {
-        "kind": "Function",
-        "name": "currentSpec",
-        "printedName": "currentSpec()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "XCTest.XCTestCase?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "XCTestCase",
-                "printedName": "XCTest.XCTestCase",
-                "usr": "c:objc(cs)XCTestCase"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:5Quick11currentSpecSo10XCTestCaseCSgyF",
-        "mangledName": "$s5Quick11currentSpecSo10XCTestCaseCSgyF",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -624,6 +580,217 @@
       },
       {
         "kind": "Import",
+        "name": "XCTest",
+        "printedName": "XCTest",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "Function",
+        "name": "currentSpec",
+        "printedName": "currentSpec()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "XCTest.XCTestCase?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "XCTestCase",
+                "printedName": "XCTest.XCTestCase",
+                "usr": "c:objc(cs)XCTestCase"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:5Quick11currentSpecSo10XCTestCaseCSgyF",
+        "mangledName": "$s5Quick11currentSpecSo10XCTestCaseCSgyF",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Import",
+        "name": "XCTest",
+        "printedName": "XCTest",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QuickTestSuite",
+        "printedName": "QuickTestSuite",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "selectedTestSuite",
+            "printedName": "selectedTestSuite(forTestCaseWithName:testName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Quick.QuickTestSuite?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickTestSuite",
+                    "printedName": "Quick.QuickTestSuite",
+                    "usr": "c:@M@Quick@objc(cs)QuickTestSuite"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Quick@objc(cs)QuickTestSuite(cm)selectedTestSuiteForTestCaseWithName:testName:",
+            "mangledName": "$s5Quick0A9TestSuiteC08selectedbC003forB12CaseWithName04testH0ACSgSS_SSSgtFZ",
+            "moduleName": "Quick",
+            "static": true,
+            "objc_name": "selectedTestSuiteForTestCaseWithName:testName:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QuickTestSuite",
+                "printedName": "Quick.QuickTestSuite",
+                "usr": "c:@M@Quick@objc(cs)QuickTestSuite"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)QuickTestSuite(im)initWithName:",
+            "mangledName": "$s5Quick0A9TestSuiteC4nameACSS_tcfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithName:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Quick@objc(cs)QuickTestSuite",
+        "mangledName": "$s5Quick0A9TestSuiteC",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)XCTestSuite",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "XCTest.XCTestSuite",
+          "XCTest.XCTest",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -642,6 +809,1587 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Quick"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AsyncBehavior",
+        "printedName": "AsyncBehavior",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Quick13AsyncBehaviorC4nameSSvpZ",
+            "mangledName": "$s5Quick13AsyncBehaviorC4nameSSvpZ",
+            "moduleName": "Quick",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Quick13AsyncBehaviorC4nameSSvgZ",
+                "mangledName": "$s5Quick13AsyncBehaviorC4nameSSvgZ",
+                "moduleName": "Quick",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Context>",
+                "static": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "spec",
+            "printedName": "spec(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Quick13AsyncBehaviorC4specyyxycFZ",
+            "mangledName": "$s5Quick13AsyncBehaviorC4specyyxycFZ",
+            "moduleName": "Quick",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Context>",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Quick13AsyncBehaviorC",
+        "mangledName": "$s5Quick13AsyncBehaviorC",
+        "moduleName": "Quick",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Context>",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AsyncDSLUser",
+            "printedName": "AsyncDSLUser",
+            "usr": "s:5Quick12AsyncDSLUserP",
+            "mangledName": "$s5Quick12AsyncDSLUserP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_CallsiteBase",
+        "printedName": "_CallsiteBase",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_CallsiteBase",
+                "printedName": "Quick._CallsiteBase",
+                "usr": "c:@M@Quick@objc(cs)_CallsiteBase"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)_CallsiteBase(im)init",
+            "mangledName": "$s5Quick13_CallsiteBaseCACycfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Quick@objc(cs)_CallsiteBase",
+        "mangledName": "$s5Quick13_CallsiteBaseC",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Callsite",
+        "printedName": "Callsite",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "file",
+            "printedName": "file",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)Callsite(py)file",
+            "mangledName": "$s5Quick8CallsiteC4fileSSvp",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)Callsite(im)file",
+                "mangledName": "$s5Quick8CallsiteC4fileSSvg",
+                "moduleName": "Quick",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "line",
+            "printedName": "line",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)Callsite(py)line",
+            "mangledName": "$s5Quick8CallsiteC4lineSuvp",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)Callsite(im)line",
+                "mangledName": "$s5Quick8CallsiteC4lineSuvg",
+                "moduleName": "Quick",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Callsite",
+                "printedName": "Quick.Callsite",
+                "usr": "c:@M@Quick@objc(cs)Callsite"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)Callsite(im)init",
+            "mangledName": "$s5Quick8CallsiteCACycfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Callsite",
+                "printedName": "Quick.Callsite",
+                "usr": "c:@M@Quick@objc(cs)Callsite"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Callsite",
+                "printedName": "Quick.Callsite",
+                "usr": "c:@M@Quick@objc(cs)Callsite"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Quick8CallsiteC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Quick8CallsiteC2eeoiySbAC_ACtFZ",
+            "moduleName": "Quick",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "NonObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Quick@objc(cs)Callsite",
+        "mangledName": "$s5Quick8CallsiteC",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Quick@objc(cs)_CallsiteBase",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Quick._CallsiteBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TestState",
+        "printedName": "TestState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Quick9TestStateV12wrappedValuexSgvp",
+            "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvp",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Quick9TestStateV12wrappedValuexSgvg",
+                "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvg",
+                "moduleName": "Quick",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Quick9TestStateV12wrappedValuexSgvs",
+                "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvs",
+                "moduleName": "Quick",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Quick9TestStateV12wrappedValuexSgvM",
+                "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvM",
+                "moduleName": "Quick",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TestState",
+                "printedName": "Quick.TestState<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:5Quick9TestStateV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Quick9TestStateVACyxGycfc",
+            "mangledName": "$s5Quick9TestStateVACyxGycfc",
+            "moduleName": "Quick",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrappedValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TestState",
+                "printedName": "Quick.TestState<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:5Quick9TestStateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Quick9TestStateV12wrappedValueACyxGxSgyXA_tcfc",
+            "mangledName": "$s5Quick9TestStateV12wrappedValueACyxGxSgyXA_tcfc",
+            "moduleName": "Quick",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TestState",
+                "printedName": "Quick.TestState<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:5Quick9TestStateV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5Quick9TestStateVyACyxGxyXAcfc",
+            "mangledName": "$s5Quick9TestStateVyACyxGxyXAcfc",
+            "moduleName": "Quick",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5Quick9TestStateV",
+        "mangledName": "$s5Quick9TestStateV",
+        "moduleName": "Quick",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "Import",
+        "name": "XCTest",
+        "printedName": "XCTest",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AsyncExample",
+        "printedName": "AsyncExample",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)AsyncExample(py)description",
+            "mangledName": "$s5Quick12AsyncExampleC11descriptionSSvp",
+            "moduleName": "Quick",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)AsyncExample(im)description",
+                "mangledName": "$s5Quick12AsyncExampleC11descriptionSSvg",
+                "moduleName": "Quick",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)AsyncExample(py)name",
+            "mangledName": "$s5Quick12AsyncExampleC4nameSSvp",
+            "moduleName": "Quick",
+            "overriding": true,
+            "objc_name": "name",
+            "declAttributes": [
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)AsyncExample(im)name",
+                "mangledName": "$s5Quick12AsyncExampleC4nameSSvg",
+                "moduleName": "Quick",
+                "overriding": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "run",
+            "printedName": "run()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Quick@objc(cs)AsyncExample(im)runWithCompletionHandler:",
+            "mangledName": "$s5Quick12AsyncExampleC3runyyYaF",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncExample",
+                "printedName": "Quick.AsyncExample",
+                "usr": "c:@M@Quick@objc(cs)AsyncExample"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncExample",
+                "printedName": "Quick.AsyncExample",
+                "usr": "c:@M@Quick@objc(cs)AsyncExample"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5Quick12AsyncExampleC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s5Quick12AsyncExampleC2eeoiySbAC_ACtFZ",
+            "moduleName": "Quick",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "NonObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Quick@objc(cs)AsyncExample",
+        "mangledName": "$s5Quick12AsyncExampleC",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@Quick@objc(cs)ExampleBase",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Quick.ExampleBase",
+          "Quick._ExampleBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExampleGroup",
+        "printedName": "ExampleGroup",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)ExampleGroup(py)description",
+            "mangledName": "$s5Quick12ExampleGroupC11descriptionSSvp",
+            "moduleName": "Quick",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)ExampleGroup(im)description",
+                "mangledName": "$s5Quick12ExampleGroupC11descriptionSSvg",
+                "moduleName": "Quick",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "examples",
+            "printedName": "examples",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Quick.Example]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Example",
+                    "printedName": "Quick.Example",
+                    "usr": "c:@M@Quick@objc(cs)Example"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)ExampleGroup(py)examples",
+            "mangledName": "$s5Quick12ExampleGroupC8examplesSayAA0B0CGvp",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Quick.Example]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Example",
+                        "printedName": "Quick.Example",
+                        "usr": "c:@M@Quick@objc(cs)Example"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)ExampleGroup(im)examples",
+                "mangledName": "$s5Quick12ExampleGroupC8examplesSayAA0B0CGvg",
+                "moduleName": "Quick",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExampleGroup",
+                "printedName": "Quick.ExampleGroup",
+                "usr": "c:@M@Quick@objc(cs)ExampleGroup"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)ExampleGroup(im)init",
+            "mangledName": "$s5Quick12ExampleGroupCACycfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Quick@objc(cs)ExampleGroup",
+        "mangledName": "$s5Quick12ExampleGroupC",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "XCTest",
+        "printedName": "XCTest",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AsyncSpec",
+        "printedName": "AsyncSpec",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "current",
+            "printedName": "current",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Quick.AsyncSpec?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AsyncSpec",
+                    "printedName": "Quick.AsyncSpec",
+                    "usr": "c:@M@Quick@objc(cs)AsyncSpec"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cpy)current",
+            "mangledName": "$s5Quick9AsyncSpecC7currentACSgvpZ",
+            "moduleName": "Quick",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "Quick.AsyncSpec?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AsyncSpec",
+                        "printedName": "Quick.AsyncSpec",
+                        "usr": "c:@M@Quick@objc(cs)AsyncSpec"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)current",
+                "mangledName": "$s5Quick9AsyncSpecC7currentACSgvgZ",
+                "moduleName": "Quick",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "spec",
+            "printedName": "spec()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)spec",
+            "mangledName": "$s5Quick9AsyncSpecC4specyyFZ",
+            "moduleName": "Quick",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "defaultTestSuite",
+            "printedName": "defaultTestSuite",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "XCTestSuite",
+                "printedName": "XCTest.XCTestSuite",
+                "usr": "c:objc(cs)XCTestSuite"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cpy)defaultTestSuite",
+            "mangledName": "$s5Quick9AsyncSpecC16defaultTestSuiteSo06XCTestF0CvpZ",
+            "moduleName": "Quick",
+            "static": true,
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "defaultTestSuite",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "XCTestSuite",
+                    "printedName": "XCTest.XCTestSuite",
+                    "usr": "c:objc(cs)XCTestSuite"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)defaultTestSuite",
+                "mangledName": "$s5Quick9AsyncSpecC16defaultTestSuiteSo06XCTestF0CvgZ",
+                "moduleName": "Quick",
+                "static": true,
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "defaultTestSuite",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "instancesRespond",
+            "printedName": "instancesRespond(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "ObjectiveC.Selector?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Selector",
+                    "printedName": "ObjectiveC.Selector",
+                    "usr": "s:10ObjectiveC8SelectorV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)instancesRespondToSelector:",
+            "mangledName": "$s5Quick9AsyncSpecC16instancesRespond2toSb10ObjectiveC8SelectorVSg_tFZ",
+            "moduleName": "Quick",
+            "static": true,
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "instancesRespondToSelector:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(invocation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncSpec",
+                "printedName": "Quick.AsyncSpec",
+                "usr": "c:@M@Quick@objc(cs)AsyncSpec"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSInvocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSInvocation",
+                    "printedName": "Foundation.NSInvocation",
+                    "usr": "c:objc(cs)NSInvocation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(im)initWithInvocation:",
+            "mangledName": "$s5Quick9AsyncSpecC10invocationACSo12NSInvocationCSg_tcfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithInvocation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(selector:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncSpec",
+                "printedName": "Quick.AsyncSpec",
+                "usr": "c:@M@Quick@objc(cs)AsyncSpec"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Selector",
+                "printedName": "ObjectiveC.Selector",
+                "usr": "s:10ObjectiveC8SelectorV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(im)initWithSelector:",
+            "mangledName": "$s5Quick9AsyncSpecC8selectorAC10ObjectiveC8SelectorV_tcfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithSelector:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncSpec",
+                "printedName": "Quick.AsyncSpec",
+                "usr": "c:@M@Quick@objc(cs)AsyncSpec"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Quick@objc(cs)AsyncSpec(im)init",
+            "mangledName": "$s5Quick9AsyncSpecCACycfc",
+            "moduleName": "Quick",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Quick@objc(cs)AsyncSpec",
+        "mangledName": "$s5Quick9AsyncSpecC",
+        "moduleName": "Quick",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)XCTestCase",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "XCTest.XCTestCase",
+          "XCTest.XCTest",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AsyncDSLUser",
+            "printedName": "AsyncDSLUser",
+            "usr": "s:5Quick12AsyncDSLUserP",
+            "mangledName": "$s5Quick12AsyncDSLUserP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1862,1354 +3610,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AsyncBehavior",
-        "printedName": "AsyncBehavior",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5Quick13AsyncBehaviorC4nameSSvpZ",
-            "mangledName": "$s5Quick13AsyncBehaviorC4nameSSvpZ",
-            "moduleName": "Quick",
-            "static": true,
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5Quick13AsyncBehaviorC4nameSSvgZ",
-                "mangledName": "$s5Quick13AsyncBehaviorC4nameSSvgZ",
-                "moduleName": "Quick",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<Context>",
-                "static": true,
-                "isOpen": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "spec",
-            "printedName": "spec(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_0_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5Quick13AsyncBehaviorC4specyyxycFZ",
-            "mangledName": "$s5Quick13AsyncBehaviorC4specyyxycFZ",
-            "moduleName": "Quick",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<Context>",
-            "static": true,
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5Quick13AsyncBehaviorC",
-        "mangledName": "$s5Quick13AsyncBehaviorC",
-        "moduleName": "Quick",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<Context>",
-        "isOpen": true,
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "AsyncDSLUser",
-            "printedName": "AsyncDSLUser",
-            "usr": "s:5Quick12AsyncDSLUserP",
-            "mangledName": "$s5Quick12AsyncDSLUserP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TestState",
-        "printedName": "TestState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "wrappedValue",
-            "printedName": "wrappedValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "τ_0_0?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5Quick9TestStateV12wrappedValuexSgvp",
-            "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvp",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "τ_0_0?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5Quick9TestStateV12wrappedValuexSgvg",
-                "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvg",
-                "moduleName": "Quick",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<T>",
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "τ_0_0?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5Quick9TestStateV12wrappedValuexSgvs",
-                "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvs",
-                "moduleName": "Quick",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<T>",
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5Quick9TestStateV12wrappedValuexSgvM",
-                "mangledName": "$s5Quick9TestStateV12wrappedValuexSgvM",
-                "moduleName": "Quick",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<T>",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TestState",
-                "printedName": "Quick.TestState<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:5Quick9TestStateV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5Quick9TestStateVACyxGycfc",
-            "mangledName": "$s5Quick9TestStateVACyxGycfc",
-            "moduleName": "Quick",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<T>",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(wrappedValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TestState",
-                "printedName": "Quick.TestState<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:5Quick9TestStateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_0_0?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "τ_0_0?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GenericTypeParam",
-                        "printedName": "τ_0_0"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5Quick9TestStateV12wrappedValueACyxGxSgyXA_tcfc",
-            "mangledName": "$s5Quick9TestStateV12wrappedValueACyxGxSgyXA_tcfc",
-            "moduleName": "Quick",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<T>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TestState",
-                "printedName": "Quick.TestState<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:5Quick9TestStateV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> τ_0_0",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5Quick9TestStateVyACyxGxyXAcfc",
-            "mangledName": "$s5Quick9TestStateVyACyxGxyXAcfc",
-            "moduleName": "Quick",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<T>",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:5Quick9TestStateV",
-        "mangledName": "$s5Quick9TestStateV",
-        "moduleName": "Quick",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<T>",
-        "declAttributes": [
-          "AccessControl",
-          "PropertyWrapper",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "_CallsiteBase",
-        "printedName": "_CallsiteBase",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "_CallsiteBase",
-                "printedName": "Quick._CallsiteBase",
-                "usr": "c:@M@Quick@objc(cs)_CallsiteBase"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)_CallsiteBase(im)init",
-            "mangledName": "$s5Quick13_CallsiteBaseCACycfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Quick@objc(cs)_CallsiteBase",
-        "mangledName": "$s5Quick13_CallsiteBaseC",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Callsite",
-        "printedName": "Callsite",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "file",
-            "printedName": "file",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)Callsite(py)file",
-            "mangledName": "$s5Quick8CallsiteC4fileSSvp",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)Callsite(im)file",
-                "mangledName": "$s5Quick8CallsiteC4fileSSvg",
-                "moduleName": "Quick",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "line",
-            "printedName": "line",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)Callsite(py)line",
-            "mangledName": "$s5Quick8CallsiteC4lineSuvp",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt",
-                    "printedName": "Swift.UInt",
-                    "usr": "s:Su"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)Callsite(im)line",
-                "mangledName": "$s5Quick8CallsiteC4lineSuvg",
-                "moduleName": "Quick",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Callsite",
-                "printedName": "Quick.Callsite",
-                "usr": "c:@M@Quick@objc(cs)Callsite"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)Callsite(im)init",
-            "mangledName": "$s5Quick8CallsiteCACycfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Callsite",
-                "printedName": "Quick.Callsite",
-                "usr": "c:@M@Quick@objc(cs)Callsite"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Callsite",
-                "printedName": "Quick.Callsite",
-                "usr": "c:@M@Quick@objc(cs)Callsite"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5Quick8CallsiteC2eeoiySbAC_ACtFZ",
-            "mangledName": "$s5Quick8CallsiteC2eeoiySbAC_ACtFZ",
-            "moduleName": "Quick",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "NonObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Quick@objc(cs)Callsite",
-        "mangledName": "$s5Quick8CallsiteC",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "Final",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:@M@Quick@objc(cs)_CallsiteBase",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "Quick._CallsiteBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AsyncExampleGroup",
-        "printedName": "AsyncExampleGroup",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5Quick17AsyncExampleGroupC11descriptionSSvp",
-            "mangledName": "$s5Quick17AsyncExampleGroupC11descriptionSSvp",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5Quick17AsyncExampleGroupC11descriptionSSvg",
-                "mangledName": "$s5Quick17AsyncExampleGroupC11descriptionSSvg",
-                "moduleName": "Quick",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "examples",
-            "printedName": "examples",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Quick.AsyncExample]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AsyncExample",
-                    "printedName": "Quick.AsyncExample",
-                    "usr": "c:@M@Quick@objc(cs)AsyncExample"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvp",
-            "mangledName": "$s5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvp",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Quick.AsyncExample]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AsyncExample",
-                        "printedName": "Quick.AsyncExample",
-                        "usr": "c:@M@Quick@objc(cs)AsyncExample"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvg",
-                "mangledName": "$s5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvg",
-                "moduleName": "Quick",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:5Quick17AsyncExampleGroupC",
-        "mangledName": "$s5Quick17AsyncExampleGroupC",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "Final",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ExampleGroup",
-        "printedName": "ExampleGroup",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)ExampleGroup(py)description",
-            "mangledName": "$s5Quick12ExampleGroupC11descriptionSSvp",
-            "moduleName": "Quick",
-            "overriding": true,
-            "objc_name": "description",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)ExampleGroup(im)description",
-                "mangledName": "$s5Quick12ExampleGroupC11descriptionSSvg",
-                "moduleName": "Quick",
-                "overriding": true,
-                "objc_name": "description",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "examples",
-            "printedName": "examples",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Quick.Example]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Example",
-                    "printedName": "Quick.Example",
-                    "usr": "c:@M@Quick@objc(cs)Example"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)ExampleGroup(py)examples",
-            "mangledName": "$s5Quick12ExampleGroupC8examplesSayAA0B0CGvp",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Quick.Example]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Example",
-                        "printedName": "Quick.Example",
-                        "usr": "c:@M@Quick@objc(cs)Example"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)ExampleGroup(im)examples",
-                "mangledName": "$s5Quick12ExampleGroupC8examplesSayAA0B0CGvg",
-                "moduleName": "Quick",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ExampleGroup",
-                "printedName": "Quick.ExampleGroup",
-                "usr": "c:@M@Quick@objc(cs)ExampleGroup"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)ExampleGroup(im)init",
-            "mangledName": "$s5Quick12ExampleGroupCACycfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Quick@objc(cs)ExampleGroup",
-        "mangledName": "$s5Quick12ExampleGroupC",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "Final",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "Import",
-        "name": "XCTest",
-        "printedName": "XCTest",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AsyncExample",
-        "printedName": "AsyncExample",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)AsyncExample(py)description",
-            "mangledName": "$s5Quick12AsyncExampleC11descriptionSSvp",
-            "moduleName": "Quick",
-            "overriding": true,
-            "objc_name": "description",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)AsyncExample(im)description",
-                "mangledName": "$s5Quick12AsyncExampleC11descriptionSSvg",
-                "moduleName": "Quick",
-                "overriding": true,
-                "objc_name": "description",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)AsyncExample(py)name",
-            "mangledName": "$s5Quick12AsyncExampleC4nameSSvp",
-            "moduleName": "Quick",
-            "overriding": true,
-            "objc_name": "name",
-            "declAttributes": [
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)AsyncExample(im)name",
-                "mangledName": "$s5Quick12AsyncExampleC4nameSSvg",
-                "moduleName": "Quick",
-                "overriding": true,
-                "objc_name": "name",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "run",
-            "printedName": "run()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Quick@objc(cs)AsyncExample(im)runWithCompletionHandler:",
-            "mangledName": "$s5Quick12AsyncExampleC3runyyYaF",
-            "moduleName": "Quick",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncExample",
-                "printedName": "Quick.AsyncExample",
-                "usr": "c:@M@Quick@objc(cs)AsyncExample"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncExample",
-                "printedName": "Quick.AsyncExample",
-                "usr": "c:@M@Quick@objc(cs)AsyncExample"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:5Quick12AsyncExampleC2eeoiySbAC_ACtFZ",
-            "mangledName": "$s5Quick12AsyncExampleC2eeoiySbAC_ACtFZ",
-            "moduleName": "Quick",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "NonObjC",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Quick@objc(cs)AsyncExample",
-        "mangledName": "$s5Quick12AsyncExampleC",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:@M@Quick@objc(cs)ExampleBase",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "Quick.ExampleBase",
-          "Quick._ExampleBase",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "TypeDecl",
         "name": "QCKConfiguration",
         "printedName": "QCKConfiguration",
         "children": [
@@ -4042,6 +4442,158 @@
         "moduleName": "Quick"
       },
       {
+        "kind": "TypeDecl",
+        "name": "AsyncExampleGroup",
+        "printedName": "AsyncExampleGroup",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Quick17AsyncExampleGroupC11descriptionSSvp",
+            "mangledName": "$s5Quick17AsyncExampleGroupC11descriptionSSvp",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Quick17AsyncExampleGroupC11descriptionSSvg",
+                "mangledName": "$s5Quick17AsyncExampleGroupC11descriptionSSvg",
+                "moduleName": "Quick",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "examples",
+            "printedName": "examples",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Quick.AsyncExample]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AsyncExample",
+                    "printedName": "Quick.AsyncExample",
+                    "usr": "c:@M@Quick@objc(cs)AsyncExample"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvp",
+            "mangledName": "$s5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvp",
+            "moduleName": "Quick",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Quick.AsyncExample]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AsyncExample",
+                        "printedName": "Quick.AsyncExample",
+                        "usr": "c:@M@Quick@objc(cs)AsyncExample"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvg",
+                "mangledName": "$s5Quick17AsyncExampleGroupC8examplesSayAA0bC0CGvg",
+                "moduleName": "Quick",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5Quick17AsyncExampleGroupC",
+        "mangledName": "$s5Quick17AsyncExampleGroupC",
+        "moduleName": "Quick",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Quick"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4162,173 +4714,6 @@
             "printedName": "SyncDSLUser",
             "usr": "s:5Quick11SyncDSLUserP",
             "mangledName": "$s5Quick11SyncDSLUserP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "XCTest",
-        "printedName": "XCTest",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "QuickTestSuite",
-        "printedName": "QuickTestSuite",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "selectedTestSuite",
-            "printedName": "selectedTestSuite(forTestCaseWithName:testName:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Quick.QuickTestSuite?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "QuickTestSuite",
-                    "printedName": "Quick.QuickTestSuite",
-                    "usr": "c:@M@Quick@objc(cs)QuickTestSuite"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Quick@objc(cs)QuickTestSuite(cm)selectedTestSuiteForTestCaseWithName:testName:",
-            "mangledName": "$s5Quick0A9TestSuiteC08selectedbC003forB12CaseWithName04testH0ACSgSS_SSSgtFZ",
-            "moduleName": "Quick",
-            "static": true,
-            "objc_name": "selectedTestSuiteForTestCaseWithName:testName:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(name:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "QuickTestSuite",
-                "printedName": "Quick.QuickTestSuite",
-                "usr": "c:@M@Quick@objc(cs)QuickTestSuite"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)QuickTestSuite(im)initWithName:",
-            "mangledName": "$s5Quick0A9TestSuiteC4nameACSS_tcfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithName:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Quick@objc(cs)QuickTestSuite",
-        "mangledName": "$s5Quick0A9TestSuiteC",
-        "moduleName": "Quick",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)XCTestSuite",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "XCTest.XCTestSuite",
-          "XCTest.XCTest",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -6035,391 +6420,6 @@
         "moduleName": "Quick"
       },
       {
-        "kind": "TypeDecl",
-        "name": "AsyncSpec",
-        "printedName": "AsyncSpec",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "current",
-            "printedName": "current",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Quick.AsyncSpec?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AsyncSpec",
-                    "printedName": "Quick.AsyncSpec",
-                    "usr": "c:@M@Quick@objc(cs)AsyncSpec"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cpy)current",
-            "mangledName": "$s5Quick9AsyncSpecC7currentACSgvpZ",
-            "moduleName": "Quick",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "Quick.AsyncSpec?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AsyncSpec",
-                        "printedName": "Quick.AsyncSpec",
-                        "usr": "c:@M@Quick@objc(cs)AsyncSpec"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)current",
-                "mangledName": "$s5Quick9AsyncSpecC7currentACSgvgZ",
-                "moduleName": "Quick",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "spec",
-            "printedName": "spec()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)spec",
-            "mangledName": "$s5Quick9AsyncSpecC4specyyFZ",
-            "moduleName": "Quick",
-            "static": true,
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "defaultTestSuite",
-            "printedName": "defaultTestSuite",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "XCTestSuite",
-                "printedName": "XCTest.XCTestSuite",
-                "usr": "c:objc(cs)XCTestSuite"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cpy)defaultTestSuite",
-            "mangledName": "$s5Quick9AsyncSpecC16defaultTestSuiteSo06XCTestF0CvpZ",
-            "moduleName": "Quick",
-            "static": true,
-            "overriding": true,
-            "isOpen": true,
-            "objc_name": "defaultTestSuite",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl",
-              "Override",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "XCTestSuite",
-                    "printedName": "XCTest.XCTestSuite",
-                    "usr": "c:objc(cs)XCTestSuite"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)defaultTestSuite",
-                "mangledName": "$s5Quick9AsyncSpecC16defaultTestSuiteSo06XCTestF0CvgZ",
-                "moduleName": "Quick",
-                "static": true,
-                "overriding": true,
-                "isOpen": true,
-                "objc_name": "defaultTestSuite",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "instancesRespond",
-            "printedName": "instancesRespond(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "ObjectiveC.Selector?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Selector",
-                    "printedName": "ObjectiveC.Selector",
-                    "usr": "s:10ObjectiveC8SelectorV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(cm)instancesRespondToSelector:",
-            "mangledName": "$s5Quick9AsyncSpecC16instancesRespond2toSb10ObjectiveC8SelectorVSg_tFZ",
-            "moduleName": "Quick",
-            "static": true,
-            "overriding": true,
-            "isOpen": true,
-            "objc_name": "instancesRespondToSelector:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(invocation:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncSpec",
-                "printedName": "Quick.AsyncSpec",
-                "usr": "c:@M@Quick@objc(cs)AsyncSpec"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSInvocation?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSInvocation",
-                    "printedName": "Foundation.NSInvocation",
-                    "usr": "c:objc(cs)NSInvocation"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(im)initWithInvocation:",
-            "mangledName": "$s5Quick9AsyncSpecC10invocationACSo12NSInvocationCSg_tcfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithInvocation:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(selector:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncSpec",
-                "printedName": "Quick.AsyncSpec",
-                "usr": "c:@M@Quick@objc(cs)AsyncSpec"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Selector",
-                "printedName": "ObjectiveC.Selector",
-                "usr": "s:10ObjectiveC8SelectorV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(im)initWithSelector:",
-            "mangledName": "$s5Quick9AsyncSpecC8selectorAC10ObjectiveC8SelectorV_tcfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithSelector:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncSpec",
-                "printedName": "Quick.AsyncSpec",
-                "usr": "c:@M@Quick@objc(cs)AsyncSpec"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Quick@objc(cs)AsyncSpec(im)init",
-            "mangledName": "$s5Quick9AsyncSpecCACycfc",
-            "moduleName": "Quick",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Quick@objc(cs)AsyncSpec",
-        "mangledName": "$s5Quick9AsyncSpecC",
-        "moduleName": "Quick",
-        "isOpen": true,
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)XCTestCase",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "XCTest.XCTestCase",
-          "XCTest.XCTest",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "AsyncDSLUser",
-            "printedName": "AsyncDSLUser",
-            "usr": "s:5Quick12AsyncDSLUserP",
-            "mangledName": "$s5Quick12AsyncDSLUserP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
-        "kind": "Import",
-        "name": "XCTest",
-        "printedName": "XCTest",
-        "declKind": "Import",
-        "moduleName": "Quick"
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -7280,62 +7280,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1149,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1391,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
-      "kind": "Dictionary",
-      "offset": 1451,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1564,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
-      "kind": "Dictionary",
-      "offset": 295,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
-      "kind": "Dictionary",
-      "offset": 1117,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
-      "kind": "Dictionary",
-      "offset": 4427,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
-      "kind": "Dictionary",
-      "offset": 5883,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/StopTest.swift",
       "kind": "StringLiteral",
       "offset": 2641,
@@ -7371,6 +7315,41 @@
       "value": "\"Quick.AsyncExampleMetadata\""
     },
     {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1149,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1391,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
+      "kind": "Dictionary",
+      "offset": 1451,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncWorld.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1564,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/TestSelectorNameProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1088,
+      "length": 39,
+      "value": "\"QUICK_USE_ENCODED_TEST_SELECTOR_NAMES\""
+    },
+    {
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Hooks\/SuiteHooks.swift",
       "kind": "Array",
       "offset": 165,
@@ -7385,39 +7364,11 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/TestSelectorNameProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 1088,
-      "length": 39,
-      "value": "\"QUICK_USE_ENCODED_TEST_SELECTOR_NAMES\""
-    },
-    {
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Callsite.swift",
       "kind": "StringLiteral",
       "offset": 874,
       "length": 8,
       "value": "\"Quick.Callsite\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncExampleGroup.swift",
-      "kind": "BooleanLiteral",
-      "offset": 768,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/ExampleGroup.swift",
-      "kind": "BooleanLiteral",
-      "offset": 815,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/ExampleGroup.swift",
-      "kind": "StringLiteral",
-      "offset": 370,
-      "length": 12,
-      "value": "\"Quick.ExampleGroup\""
     },
     {
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Examples\/AsyncExample.swift",
@@ -7432,6 +7383,20 @@
       "offset": 46,
       "length": 12,
       "value": "\"Quick.AsyncExample\""
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/ExampleGroup.swift",
+      "kind": "BooleanLiteral",
+      "offset": 815,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/ExampleGroup.swift",
+      "kind": "StringLiteral",
+      "offset": 370,
+      "length": 12,
+      "value": "\"Quick.ExampleGroup\""
     },
     {
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/World.swift",
@@ -7490,6 +7455,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/Async\/AsyncExampleGroup.swift",
+      "kind": "BooleanLiteral",
+      "offset": 768,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/World+DSL.swift",
       "kind": "Dictionary",
       "offset": 1218,
@@ -7528,6 +7500,34 @@
       "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/World+DSL.swift",
       "kind": "Dictionary",
       "offset": 12500,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
+      "kind": "Dictionary",
+      "offset": 295,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
+      "kind": "Dictionary",
+      "offset": 1117,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
+      "kind": "Dictionary",
+      "offset": 4427,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mac\/Desktop\/证书\/NEKit\/Carthage\/Checkouts\/Quick\/Sources\/Quick\/DSL\/AsyncWorld+DSL.swift",
+      "kind": "Dictionary",
+      "offset": 5883,
       "length": 3,
       "value": "[]"
     },

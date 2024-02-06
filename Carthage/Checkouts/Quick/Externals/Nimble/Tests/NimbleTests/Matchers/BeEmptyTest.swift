@@ -8,7 +8,7 @@ import NimbleSharedTestHelpers
 final class BeEmptyTest: XCTestCase {
     func testBeEmptyPositive() {
         // Array
-        expect([] as [Int]).to(beEmpty())
+        expect([Int]()).to(beEmpty())
         expect([1]).toNot(beEmpty())
 
         expect([] as [CInt]).to(beEmpty())
@@ -51,7 +51,7 @@ final class BeEmptyTest: XCTestCase {
         expect(TestOptionSet.one).toNot(beEmpty())
     }
 
-    func testBeEmptyNegative() {
+    func testBeEmptyNegative() { // swiftlint:disable:this function_body_length
         // NSArray
         failsWithErrorMessage("expected to not be empty, got <()>") {
             expect(NSArray()).toNot(beEmpty())
@@ -62,7 +62,7 @@ final class BeEmptyTest: XCTestCase {
 
         // Array
         failsWithErrorMessage("expected to not be empty, got <[]>") {
-            expect([]).toNot(beEmpty())
+            expect([] as [Int]).toNot(beEmpty())
         }
         failsWithErrorMessage("expected to be empty, got <[1]>") {
             expect([1]).to(beEmpty())
@@ -133,7 +133,7 @@ final class BeEmptyTest: XCTestCase {
         }
     }
 
-    func testNilMatches() {
+    func testNilMatches() { // swiftlint:disable:this function_body_length
         failsWithErrorMessageForNil("expected to be empty, got <nil>") {
             expect(nil as String?).to(beEmpty())
         }

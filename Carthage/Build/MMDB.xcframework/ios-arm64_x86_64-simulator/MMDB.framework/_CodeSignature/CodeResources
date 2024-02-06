@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MMDB.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		+GwiBkZnqDCmZ5kGiMoJBnEzMOk=
+		dDHuVa48+fdRjoNKmZzx+vY+gkg=
 		</data>
 		<key>Modules/MMDB.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		g4PwvVbDxBhhzftvdKWJxRyBrj0=
+		UrhJGIa7pYkKtqGQmFff+ta0i0E=
 		</data>
 		<key>Modules/MMDB.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -141,22 +141,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+GwiBkZnqDCmZ5kGiMoJBnEzMOk=
+			dDHuVa48+fdRjoNKmZzx+vY+gkg=
 			</data>
 			<key>hash2</key>
 			<data>
-			pg+WFDmHeXSVbcYdwC+dinnOK8x0KfP+TFOY+52f5K0=
+			7I2M9uun3F36pk1bIF0K2vhfwtfio9tjIk4x/pvrMEQ=
 			</data>
 		</dict>
 		<key>Modules/MMDB.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g4PwvVbDxBhhzftvdKWJxRyBrj0=
+			UrhJGIa7pYkKtqGQmFff+ta0i0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			6xh68E+qKYaRpBPKEx3eFyiJCTOFAriq9HCniMzZMzY=
+			pFMu6YjcYas64oYaIefHZYWLy7dd0wXL+la/D4uDqqA=
 			</data>
 		</dict>
 		<key>Modules/MMDB.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

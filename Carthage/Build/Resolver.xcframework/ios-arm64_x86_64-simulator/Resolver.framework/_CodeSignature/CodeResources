@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Resolver.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		uOOUPSgHanOFysOHlPdnHgvoh6U=
+		1kR/LCVUevmsJsrsPciQkYHT2JM=
 		</data>
 		<key>Modules/Resolver.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		xTrdvng/xx5xw2K2vMys44IsZk4=
+		XBp8PqchRHFEFTwY6Qxq1SjYikQ=
 		</data>
 		<key>Modules/Resolver.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -81,22 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uOOUPSgHanOFysOHlPdnHgvoh6U=
+			1kR/LCVUevmsJsrsPciQkYHT2JM=
 			</data>
 			<key>hash2</key>
 			<data>
-			VGVKuMcoizx/PwFtx9GFEGy+kOOh9OjvkrW/wxoWx3s=
+			b1A2OrrmoJquGwwzNrAP68SqymosoYXJLIMbvBmPmxQ=
 			</data>
 		</dict>
 		<key>Modules/Resolver.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xTrdvng/xx5xw2K2vMys44IsZk4=
+			XBp8PqchRHFEFTwY6Qxq1SjYikQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kMkc60W23Sj5QidPuUDvTnBUG44Yyx7WrXxKjl4/owk=
+			lyKL6DxF8UX+xMW64soMjcCVLQ87pQdausKm0f+zLs8=
 			</data>
 		</dict>
 		<key>Modules/Resolver.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

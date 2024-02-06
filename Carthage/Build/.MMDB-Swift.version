@@ -3,14 +3,14 @@
   "iOS" : [
     {
       "swiftToolchainVersion" : "5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)",
-      "hash" : "bdfa4903e41c1ffd8dd4d85b0d574d4fdb73311ef14f0fd7b43c92f20f7813ee",
+      "hash" : "dade4293f23bae904625dbe315d8a5275bccb9f17390c3f1a2b06eaa97fda179",
       "name" : "MMDB",
       "container" : "MMDB.xcframework",
       "identifier" : "ios-arm64"
     },
     {
       "swiftToolchainVersion" : "5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)",
-      "hash" : "a679d4bced29d102575a716d77268ef1d07bc9a77cd5f874d5d492a5b41b3bdb",
+      "hash" : "cb838005d3311be8b6574146c8a72fc59da11f741039b13f889194c843153dde",
       "name" : "MMDB",
       "container" : "MMDB.xcframework",
       "identifier" : "ios-arm64_x86_64-simulator"

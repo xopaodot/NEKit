@@ -116,19 +116,19 @@ private func throwableUntil(
     file: FileString = #file,
     line: UInt = #line,
     action: @escaping (@escaping () -> Void) async throws -> Void) async {
-        let awaiter = NimbleEnvironment.activeInstance.awaiter
         let leeway = timeout.divided
-        let result = await awaiter.performBlock(file: file, line: line) { @MainActor (done: @escaping (ErrorResult) -> Void) async throws -> Void in
-            do {
-                try await action {
-                    done(.none)
+        let result = await performBlock(
+            timeoutInterval: timeout,
+            leeway: leeway,
+            file: file, line: line) { @MainActor (done: @escaping (ErrorResult) -> Void) async throws -> Void in
+                do {
+                    try await action {
+                        done(.none)
+                    }
+                } catch let e {
+                    done(.error(e))
                 }
-            } catch let e {
-                done(.error(e))
             }
-        }
-            .timeout(timeout, forcefullyAbortTimeout: leeway)
-            .wait("waitUntil(...)", file: file, line: line)
 
         switch result {
         case .incomplete: internalError("Reached .incomplete state for waitUntil(...).")
@@ -137,8 +137,6 @@ private func throwableUntil(
                  file: file, line: line)
         case .timedOut:
             fail("Waited more than \(timeout.description)", file: file, line: line)
-        case let .raisedException(exception):
-            fail("Unexpected exception raised: \(exception)")
         case let .errorThrown(error):
             fail("Unexpected error thrown: \(error)")
         case .completed(.error(let error)):

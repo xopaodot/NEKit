@@ -6,91 +6,95 @@
 	<dict>
 		<key>Headers/CLIColor.h</key>
 		<data>
-		L0LbPxv9Ipgf1CQy1I3VTbeXRJM=
+		w3WWC9xP9Ju/F7y5PnBxraDDH6U=
 		</data>
 		<key>Headers/CocoaLumberjack.h</key>
 		<data>
-		C/vR1m0pnbPw9x//wS7jf5PAoQ4=
+		R53XWApQ3DcrgJPeT2AaPA9bI8w=
 		</data>
 		<key>Headers/DDASLLogCapture.h</key>
 		<data>
-		2r39Xk5Z0bDSfV/6/kr62DzcVqc=
+		m+UHkPQ0WGGWZLIsA9ZHsVIFYFg=
 		</data>
 		<key>Headers/DDASLLogger.h</key>
 		<data>
-		g4y4RWQk+bLV9lHRoRhP2cJzJh8=
+		hyaqaIrVcmpIzVBgbqFbnjwMd7w=
 		</data>
 		<key>Headers/DDAbstractDatabaseLogger.h</key>
 		<data>
-		Z6JK1uCoKg12qD+a1o0k2Kzbw5k=
+		CliUQ0yDT60lI2PM3iCWFoSEPP8=
 		</data>
 		<key>Headers/DDAssertMacros.h</key>
 		<data>
-		VKs+idZptYJ0p5K8z+UD1VjZy+o=
+		xxXrGUqqGVPXpu5wx5oiMIxmBbI=
 		</data>
 		<key>Headers/DDContextFilterLogFormatter+Deprecated.h</key>
 		<data>
-		+O42wpQ7nb8ODHCX1mABHdE1nYI=
+		gt6fFFfTIg8xcB8P9BdLkx8UVDo=
 		</data>
 		<key>Headers/DDContextFilterLogFormatter.h</key>
 		<data>
-		V9glPeVk48M/jxllZxKzsZNhKgM=
+		mpv3rS+xbvG2Mm4LZB3qD+E1dnI=
 		</data>
 		<key>Headers/DDDispatchQueueLogFormatter.h</key>
 		<data>
-		NfywPM4OrGgqMe8H6hmrpFrPBQ8=
+		kh4eZsyCKy299R++XCrz1FKTUY0=
 		</data>
 		<key>Headers/DDFileLogger+Buffering.h</key>
 		<data>
-		mBsDubObZ63g5mccQAdK3GZrTuM=
+		Yk3ZPvKZ9d6Mwz4wfvbKKhtlLkk=
 		</data>
 		<key>Headers/DDFileLogger.h</key>
 		<data>
-		6sZcHSU+UKfxON5Kw1UaC4TAh+s=
+		a2V0ycdqxngqALz9kabcN5TxA1o=
 		</data>
 		<key>Headers/DDLegacyMacros.h</key>
 		<data>
-		b2u6dhO2sUhgAhHQ1ktaGysO7GU=
+		TH64SjKNVWs9Y9Vut9FQjSw9Zeo=
 		</data>
 		<key>Headers/DDLog+LOGV.h</key>
 		<data>
-		n1cSWiqmBe+MduQFZkP0X6F8HDg=
+		/XBq6ACqe52kIGgQXpWdgnp8IDQ=
 		</data>
 		<key>Headers/DDLog.h</key>
 		<data>
-		qw2AHT9FcK9n0H2LTNzCuK/v2Nk=
+		uVEjyT/+ECoYQ4YyM7YKhWNiWVA=
 		</data>
 		<key>Headers/DDLogMacros.h</key>
 		<data>
-		bmRP/8IZLP7byrb4AD2USFe3DCI=
+		IWvlUCT8wnI4/zdN6hVaQjnkZ3w=
 		</data>
 		<key>Headers/DDLoggerNames.h</key>
 		<data>
-		SlKZlz43u9dr25OzOPMK3FElzZk=
+		6kpRubtsXWdvCQ9Y6UUreGqRlpA=
 		</data>
 		<key>Headers/DDMultiFormatter.h</key>
 		<data>
-		z+my+z0nlwPkhmt2SqlKNpl8TnY=
+		39/+wpV1yihC7ffScqkr9l2p2IE=
 		</data>
 		<key>Headers/DDOSLogger.h</key>
 		<data>
-		s+zRYwkPazRmWCeAQ8DQLU13lzo=
+		PT/DCrBj22dvMrccc/LHgff5gc8=
 		</data>
 		<key>Headers/DDTTYLogger.h</key>
 		<data>
-		wHMhzev22C96/8+CnXAAuJit5b8=
+		XEVf/Jla//xcZt2XAStu/u2LKd8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/LcdSb+VyjvQ0WTJRnFGtwqk9HQ=
+		fUamlODw7T9VoP4yGHuWEd2HLig=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		RTCinkvlhbb3L2yAKkLouaUmG4Y=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		igSKkZ9+sOgjEIIBmRZPXcpQtYk=
+		</data>
 		<key>PrivateHeaders/DDFileLogger+Internal.h</key>
 		<data>
-		r4ZJiK38FRNABwV0IAQN2cPIwkI=
+		8JycgTb/DZ0g8TItudg9arB9Llw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,133 +103,133 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vWXfxrA6Vv/2sHuLe+XLQsgleMbRnCYChaOSToaHjYc=
+			eXmigKspk3rI+b8063O3SOFvhgWX7VA0fmrQFUZVJos=
 			</data>
 		</dict>
 		<key>Headers/CocoaLumberjack.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/8qUNdrfCyxduq/yE9eLfox/LRYL3BDA3MA3ABnPras=
+			8FSySmaPtdy7ziJSJO91pYRYHdCULKUF8Ay8tsZB9WE=
 			</data>
 		</dict>
 		<key>Headers/DDASLLogCapture.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xG1B6MO4Yqa5Tv3WdW1LvV9oS1uya5Mz+HYMlW4QVog=
+			EXfUpiEm9rWjXtr+hSUDFAUIXzOJR+jxy53Z/a/P/04=
 			</data>
 		</dict>
 		<key>Headers/DDASLLogger.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QqARphpqBPQhIsO1n1Y5vFO01k6tfa1Ewmr0chFnkkI=
+			n4DP16Kp2acHp6FsPsCLh6MWtB79/BHNBZj1HNalHZQ=
 			</data>
 		</dict>
 		<key>Headers/DDAbstractDatabaseLogger.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wzr57fmq3tFfPS2jG+YGHGgp2kNF51djQqAeY5TYSfQ=
+			w+FKvC3iaLVIRJKztWQqGVXkDDfkyXg9TLgSQblVp+g=
 			</data>
 		</dict>
 		<key>Headers/DDAssertMacros.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w2CRn89ww8RmHEz0CceGSpT6ZZ4pK4uWnfiF1GZmTgA=
+			dJ8qEZsQtzjs60eDVlAS2/mg8xvh8E2I5TURR9AH9ZI=
 			</data>
 		</dict>
 		<key>Headers/DDContextFilterLogFormatter+Deprecated.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZaZHzTANQUBpp2rK6kiM/JswQlPFmRlr1WGd/pXFs/c=
+			+8X0LpouRg3v/i8a1DIKiBm9LMUFJo6wTqpPZhQz39s=
 			</data>
 		</dict>
 		<key>Headers/DDContextFilterLogFormatter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IIHSLBQ4+qSU6G4aZU+q+j8Kc0mTF4uFJ/OylXRPttg=
+			8aRb32P8PaJV2yg46o28QtXsCjfwHnoK1EEnsV9+FXQ=
 			</data>
 		</dict>
 		<key>Headers/DDDispatchQueueLogFormatter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Wge9To80H7RK4O5/zPffUp14sqpIswjjg3cLWR1Hjw=
+			TLFBhQQMhRfX17gwNcATjO8VSdy22gpxeoEk9Ene6/0=
 			</data>
 		</dict>
 		<key>Headers/DDFileLogger+Buffering.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jp0F3DYcuvfEFFe+hXe/T8ltEG7Bk2dinR4TvLvb7vI=
+			8PpGBHMtXn0joURK6e+bPKb1yZubZ0cE3u9dGmVORyE=
 			</data>
 		</dict>
 		<key>Headers/DDFileLogger.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gifkPprSPdIjlfU07Yzl87MnZ0k3YcJGzfOCMr1jGIA=
+			6pt5IihuJOJw5uIFAkU++sneE7tlI3GaSxBpMI5iXPg=
 			</data>
 		</dict>
 		<key>Headers/DDLegacyMacros.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YqDWAxRWJNTIhh54Q/JhZbi2+Y5eRFgKec3hd2s9CGQ=
+			rpSsgxoTTaUsTObx1zuMrHrA7h4W7rrbdpe5q4X9XPA=
 			</data>
 		</dict>
 		<key>Headers/DDLog+LOGV.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKpB4RMD69iTfgaFHtSugqd3W/Mbo9ZTr6eYEcFecNY=
+			cfrHJTP3hEVyq1NTNmaDrUOI/Mqd4YWYN/tIdZNLzfA=
 			</data>
 		</dict>
 		<key>Headers/DDLog.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			utze14NDW+FzzDxGdWz5qkawSUoEpwKwM8554B74new=
+			bcwi1tqnZ0WQoZHDhV2d+iIhv9vO4JiZGYl5nJlXS7c=
 			</data>
 		</dict>
 		<key>Headers/DDLogMacros.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k3L0uQSxzKXFqc+Jt2+m5yH2STIoJCSOT3IJmCUe2JE=
+			ew3HcRXbuW3iMOgwnSCtaRuIdwLtzcXUnTxxjSXbqYw=
 			</data>
 		</dict>
 		<key>Headers/DDLoggerNames.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			esR3zw+qsTXiTbLbbH2OfW+qwbYNaLpB2A0q+B65yuI=
+			IZFMJxFHJDSxyYING9fRiHhliQVV9xB96ls0HqiQN6Q=
 			</data>
 		</dict>
 		<key>Headers/DDMultiFormatter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0JFxMN3LO2CvCTvyUs7o52lCTvnvpjHv0Qw343Msm8=
+			hK2ooMPqIFLCxrxTBuM0egcD/iueswnP3GSl8YQIgrU=
 			</data>
 		</dict>
 		<key>Headers/DDOSLogger.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HliF6XjB0B5fOYDniKUYgq7twpMvbaT1C+tVII9AsUc=
+			H3dUuEcBwajMHE7Yz42/T9OuaJjLkdTRIIZ8I/vVSoM=
 			</data>
 		</dict>
 		<key>Headers/DDTTYLogger.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hw4NxxtntjhpdZZGRCiM28io6aADoxUVwA/2CbsDtjs=
+			Y4IB6GtGv2TWGeq9FNRbYR0tk4Fra9zh/Pa4uXPa1JI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -235,11 +239,18 @@
 			zhuB2xB6rdE4nIhIZGaTtZEy73bVzVtP7WDXPJWN7pQ=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RdD87xOg58EJBuPMFcDsdLsYU2xakhChrqHMjzBO+Tw=
+			</data>
+		</dict>
 		<key>PrivateHeaders/DDFileLogger+Internal.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UfVYCqduXIR+XPrY0ORz4GB2UmA8qcwhYvxyGvC/9qs=
+			RxHfZ0AiStVHdBVSGge2SLZ7ZPNHuk/H8iM1tkX0XtM=
 			</data>
 		</dict>
 	</dict>

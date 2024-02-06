@@ -4,7 +4,6 @@ POD_NAME=Quick
 PODSPEC=Quick.podspec
 
 POD=${COCOAPODS:-"bundle exec pod"}
-CARTHAGE=${CARTHAGE:-"carthage"}
 GH=${GH:-"gh"}
 
 function help {
@@ -42,13 +41,14 @@ if [ -z "`which $POD`" ]; then
 fi
 echo " > Cocoapods is installed"
 
-if [ -z "`which $CARTHAGE`" ]; then
-    die "Carthage is required to produce a release. Install with brew using 'brew install carthage'. Aborting."
-fi
-echo " > Carthage is installed"
-
 if [ -z "`which $GH`" ]; then
     die "gh (github CLI) is required to produce a release. Install with brew using 'brew install gh'. Aborting."
+fi
+
+if [ "$POD" =~ ^bundle.* ]; then
+    echo " > Running bundle install to verify that you have up-to-date depedencies"
+    bundle install
+    echo " > Ruby dependencies are up to date."
 fi
 
 echo " > Verifying you are authenticated with the github CLI"
@@ -105,7 +105,7 @@ git config --get user.signingkey > /dev/null || {
 echo " > Found PGP key for git"
 
 # Veify cocoapods trunk ownership
-pod trunk me | grep -q "$POD_NAME" || die "You do not have access to pod repository $POD_NAME. Aborting."
+$POD trunk me | grep -q "$POD_NAME" || die "You do not have access to pod repository $POD_NAME. Aborting."
 echo " > Verified ownership to $POD_NAME pod"
 
 echo "--- Releasing version $VERSION (tag: $VERSION_TAG)..."
@@ -164,11 +164,6 @@ echo "-> Pushing to pod trunk..."
 
 $POD trunk push "$PODSPEC"
 
-echo "Creating a carthage archive to include in the release"
-$CARTHAGE build --archive --use-xcframeworks
-zip -r Quick.xcframework.zip Carthage/Build/Quick.xcframework
-
-
 # Check version tag to determine whether to mark the release as a prerelease version or not.
 echo $VERSION_TAG | grep -q -E "^v\d+\.\d+\.\d+\$"
 if [ $? -eq 0 ]; then
@@ -179,7 +174,7 @@ fi
 
 echo "-> Creating a github release using auto-generated notes."
 
-$GH release create -R Quick/Quick $VERSION_TAG Quick.framework.zip Quick.xcframework.zip --generate-notes $PRERELEASE_FLAGS
+$GH release create -R Quick/Quick $VERSION_TAG --generate-notes $PRERELEASE_FLAGS
 
 echo
 echo "================ Finalizing the Release ================"
@@ -187,6 +182,7 @@ echo
 echo " - Opening GitHub to allow for any edits to the release notes."
 echo "   - You should add a Highlights section at the top to call out any notable changes or fixes."
 echo "   - In particular, any breaking changes should be listed under Highlights."
+echo "   - Carthage archive frameworks will be automatically uploaded after the release is published."
 echo " - Announce!"
 
 open "https://github.com/Quick/Quick/releases/tag/$VERSION_TAG"

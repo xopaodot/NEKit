@@ -1,6 +1,6 @@
 // Software License Agreement (BSD License)
 //
-// Copyright (c) 2010-2023, Deusty, LLC
+// Copyright (c) 2010-2024, Deusty, LLC
 // All rights reserved.
 //
 // Redistribution and use of this software in source and binary forms,
@@ -72,7 +72,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
     [DDLog removeAllLoggers];
     // We need to sync all involved queues to wait for the post-removal processing of the logger to finish before deleting the files.
     NSAssert(![self->logger isOnGlobalLoggingQueue], @"Trouble ahead!");
-    dispatch_sync([DDLog loggingQueue], ^{
+    dispatch_sync(DDLog.loggingQueue, ^{
         NSAssert(![self->logger isOnInternalLoggerQueue], @"Trouble ahead!");
         dispatch_sync(self->logger.loggerQueue, ^{
             /* noop */
@@ -92,6 +92,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
     XCTAssertTrue([[NSFileManager defaultManager] removeItemAtPath:logsDirectory error:&error]);
     XCTAssertNil(error);
 
+    logFileManager = nil;
     logger = nil;
     logsDirectory = nil;
 }
@@ -358,7 +359,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
                                                    options:0
                                                  timestamp:[NSDate date]];
     __block NSData *data = nil;
-    dispatch_sync([DDLog loggingQueue], ^{
+    dispatch_sync(DDLog.loggingQueue, ^{
         dispatch_sync(logger->_loggerQueue, ^{
             data = [logger lt_dataForMessage:msg];
         });
